@@ -1,0 +1,7 @@
+div {
+
+ border: 10px solid rgb(182, 29, 29);
+ margin: 50px;
+ /* top right button e left*/
+ padding: 25px 50px 75px 100px;
+}

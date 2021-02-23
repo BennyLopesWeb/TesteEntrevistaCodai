@@ -1,43 +1,127 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codai</title>
+    <title>Codaí</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,900;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    
-    <table class="table">
-        <tr>
-            <th>Nome</th>
-            <th>idade</th>
-        </tr>
-        <tr>
-            <td>Lauteria</td>
-            <td>63</td>
-        </tr>
-        <tr>
-            <td>Benigno</td>
-            <td>40</td>
-        </tr>
-        <tr>
-            <td>Bemivalda</td>
-            <td>11</td>
-        </tr>
+    <div class="container-fluid container-linear">
+        <div class=" row container-card">
+            <div class="offset-lg-3 col-lg-3 card-col">
+                <div class="card card-perfil">
+                    <div class="img-card-perfil ">
+                        <img src="imagens/BennyLopes.jpg" alt=" Foto Perfil" class="card-image mx-auto d-block">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="text-center card-title" id="nome-no-html">Benigno Lopes</h5>
+                        <hr class="hr">
+                        <p class="text-center" id="cargo-no-html">
+                            Desenvolvedor
+                        </p>
+                        <div class="botoes-card">
+                            
+                            <button onclick="clickNoSobre()" class="btn mr-1" id="btn-sobre"> Sobre</button>
 
-        <tr>
-            <td>Bryant</td>
-            <td>5</td>
-        </tr>
+                            <button onclick=" clickNoProjetos()" class="btn ml-1" id="btn-projetos">Projetos</button>
+                        </div>
+                        <div class="icon-redes-socias">
+                            <div class="links-redes-socias mt-2">
+                                <a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twiter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 text-body">
+                <div class="text" id="texto-1">
+                    <h1 class="title-text"> Olá</h1>
+                    <h4 class="title-subtitle"> Bem vindo ao meu Curriculum</h4>
+                    <p>
+                        Sou Benigno Fernandes Lopes, tenho já uma certa experiancia no mundo de TI,
+                        porém tenho me afastado da área de Desenvolvimento, por necessidade financeira, mas sempre
+                        foi a minha maior paixão.
+                    </p>
+                    <p>
+                        Vejo neste curso, uma oportunidade de voltar a fazer aquilo que sempre foi minha paixão.
+                    </p>
+                </div>
+                <div class="text" id="texto-2">
+                    <h1 class="title-text"> Projetos</h1>
+                    <h4 class="title-subtitle"> Alguns projetos que trabalhei.</h4>
+                    <p>
+                        <a href="https://www.growdev.com.br" target="_blank"> Site da GrowDev - Este site foi
+                            desenvoovido
+                            em ReactJS</a>
+                    </p>
 
-        <tr>
-            <td>Benicius</td>
-            <td>1</td>
-        </tr>
+                </div>
+            </div>
 
-    </table>
-    <button type="button" class="btn btn-primary">Primary</button>
+
+        </div>
+    </div>
+    </div>
+    <footer class="container">
+        <div class="row" id="footer-elementos">
+            <div class="col-md-3 col-lg-3">
+                <h4>Telefone</h4>
+                <p>(48) 99904-9779</p>
+            </div>
+            <div class="col-md-3 col-lg-3">
+                <div class="email">
+                    <h4>E-mail</h4>
+                    <p>benignofernandeslopes@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-3">
+                <h4>Siga</h4>
+                <div class="links-redes-socias">
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twiter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center mb-2">
+            <div class="col-lg-12 col-md-12">
+                <small>2021 <a href="#"> Growdev</a> </small>
+            </div>
+
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>
